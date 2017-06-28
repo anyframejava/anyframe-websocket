@@ -23,7 +23,7 @@ class="com.anyframe.sample.websocket.handler.MovieFinderWebSocketHandler" />]]><
 				클라이언트의 javascript로 WebSocket을 생성하고 서버와 메시지를 송수신한다. 생성된 WebSocket에 onopen, onmessage, onclose, onerror 등의 이벤트를 등록한다.
 			</para>
 			<programlisting language="xml"><![CDATA[<script>
-var sock = new WebSock(‘ws://mydomain.com/getMovieList’);
+var sock = new WebSock(‘ws://mydomain.com/_websocket_/getWebSocketMovieList.do’);
   sock.onopen = function() {
     console.log('open');
 };
